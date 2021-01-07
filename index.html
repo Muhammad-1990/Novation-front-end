@@ -202,7 +202,7 @@
             <div class="container">
                 <div class="header-row">
                     <div class="header-column justify-content-start">
-                        <a href="/" style="text-decoration: none; display: contents;">
+                        <a href="/" style="text-decoration: none; display: -webkit-flex;">
                             <img src="/images/logo/logo.webp" alt="Novation logo" width="40px" height="40px">
                             <span class="logo-nova">Novation
                                 <ul class="logo-tech">
@@ -2194,6 +2194,26 @@ flex-wrap: wrap;
     .toast div:nth-child(2){
         display: block;
     }
+
+
+    @media (max-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+            .header-column > a{
+                text-decoration: none;
+display: contents;
+/* width: 300px; */
+margin-left: auto;
+margin-right: auto;
+display: -webkit-flex;
+            }
+
+            .header-column > nav{
+                margin-left: auto;
+margin-right: auto;
+            }
+        }
     
 </style>
 

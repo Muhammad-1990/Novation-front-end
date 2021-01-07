@@ -408,12 +408,12 @@
                                                 <span class="btn">Read more</span> -->
                         </div>
                         <div class="ext-services-column image">
-                            <img src="/images/p1.webp" alt="Employee busy working on special services" width="487px" height="325px">
+                            <img src="/images/p1.webp" alt="Employee busy working on special services" width="487px" >
                         </div>
                     </div>
                     <div class="ext-services-row">
                         <div class="ext-services-column image">
-                            <img src="/images/p3.webp" alt="Employees busy working on cloud services" width="487px" height="211px">
+                            <img src="/images/p3.webp" alt="Employees busy working on cloud services" width="487px" >
                         </div>
                         <div class="ext-services-column desc">
                             <h3>Cloud services</h3>
@@ -444,7 +444,7 @@
                                         <span class="btn">Read more</span> -->
                         </div>
                         <div class="ext-services-column image">
-                            <img src="/images/p2.webp" alt="Employee busy working on expert advice" width="487px" height="325px">
+                            <img src="/images/p2.webp" alt="Employee busy working on expert advice" width="487px">
                         </div>
 
                     </div>
@@ -2253,6 +2253,72 @@ text-align: center;
 }
 .main-services ul li{
     margin-bottom: 65px;
+}
+
+.ext-services-row:first-child {
+margin: 0px;
+text-align: center;
+}
+.ext-services-row:not(:nth-child(3)){
+    max-width: 100%;
+flex-wrap: wrap;
+flex-direction: column-reverse;
+padding: 0 10px;
+}
+.ext-services-row:nth-child(3){
+    max-width: 100%;
+flex-wrap: wrap;
+padding: 0 10px;
+}
+.ext-services-column.desc {
+width: 90%;
+margin-top: auto;
+margin-bottom: auto;
+padding: 0;
+}
+.ext-services-column.image {
+    width: 90%;
+}
+
+.ext-services-column.desc h2 {
+    line-height: 30px;
+}
+
+.main-features-row h2 {
+    line-height: 40px;
+}
+.main-features-column ul li {
+    height: 220px;
+}
+.brands-ribbon h2 {
+    line-height: 30px;
+}
+.brands-ribbon-column ul li {
+    border: none;
+}
+.footer-body .footer-row {
+padding: 50px 20px;
+max-width: 100%;
+flex-wrap: wrap;
+}
+.footer-row {
+max-width: 100%;
+flex-wrap: wrap;
+}
+.footer-column {
+display: flex;
+align-self: stretch;
+align-items: center;
+flex: 1 1 100%;
+margin: 10px 0;
+/* text-align: center; */
+}
+.footer-row .footer-column > nav {
+width: 100%;
+}
+.footer-row .footer-column > nav > ul > .flex-item{
+padding: 0;
+margin: 0;
 }
         }
     
